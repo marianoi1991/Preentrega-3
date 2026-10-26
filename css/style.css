@@ -1,0 +1,139 @@
+/* Fuentes */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../Fuentes/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../Fuentes/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../Fuentes/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+:root {
+  --color-primario: #1e3a8a;    /* Azul profundo (HEX) */
+  --color-secundario: #4b5563;  /* Gris neutro (HEX) */
+  --color-acento: rgb(14, 165, 233); /* Azul brillante (RGB) */
+  --color-blanco: #ffffff;
+
+  --fuente-principal: 'Poppins', sans-serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-secundario);
+  
+  /* Fondo personalizado (Cumple Requisito 3) */
+  background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+  min-height: 100vh;
+}
+
+/* titulos*/
+.titulo-principal {
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+  color: var(--color-blanco); /* Blanco para resaltar sobre el fondo azul del header */
+  font-weight: 700;
+}
+
+.subtitulo-seccion {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-primario);
+  border-bottom: 2px solid var(--color-acento);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.texto-cuerpo {
+  font-weight: 400;
+  color: var(--color-secundario);
+  margin-bottom: 1.25rem;
+}
+
+.texto-destacado {
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+
+.cabecera-principal {
+  background-color: var(--color-primario); 
+  color: var(--color-blanco);
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.tarjeta-contenido {
+  background-color: var(--color-blanco);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-acento {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-acento:hover {
+  background-color: #0284c7;
+}
+
+/* menu */
+.menu-navegacion {
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.menu-lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  background-color: rgba(16, 42, 69, 0.4); 
+  border-radius: 8px;
+}
+
+.menu-enlace {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu-enlace:hover {
+  color: var(--color-acento);
+  background-color: rgba(255, 255, 255, 0.1);
+}
